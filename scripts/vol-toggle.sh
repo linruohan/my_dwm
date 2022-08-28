@@ -1,4 +1,4 @@
 #!/bin/bash
-
+curdir=$(dirname $(realpath $0))
 /usr/bin/amixer set Master toggle
-bash ~/scripts/dwm-status-refresh.sh
+bash ${curdir}/dwm-status-refresh.sh

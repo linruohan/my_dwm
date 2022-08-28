@@ -1,6 +1,6 @@
 #!/bin/bash
-
+curdir=$(dirname $(realpath $0))
 while true; do
-	/bin/bash ~/scripts/wp-change.sh
-	sleep 3m
+    /bin/bash ${curdir}/wp-change.sh
+    sleep 3m
 done

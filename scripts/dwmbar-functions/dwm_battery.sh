@@ -4,7 +4,7 @@
 # Joe Standring <git@joestandring.com>
 # GNU GPLv3
 
-dwm_battery () {
+dwm_battery() {
     # Change BAT1 to whatever your battery is identified as. Typically BAT0 or BAT1
     CHARGE=$(cat /sys/class/power_supply/BAT1/capacity)
     STATUS=$(cat /sys/class/power_supply/BAT1/status)
@@ -23,4 +23,3 @@ dwm_battery () {
 }
 
 dwm_battery
-

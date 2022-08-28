@@ -6,7 +6,7 @@
 
 # To count mail in an inbox, change "/path/to/inbox" below to the location of your inbox. For example, "/home/$USER/.mail/new"
 
-dwm_mail () {
+dwm_mail() {
     MAILBOX=$(ls /path/to/inbox | wc -l)
 
     printf "%s" "$SEP1"

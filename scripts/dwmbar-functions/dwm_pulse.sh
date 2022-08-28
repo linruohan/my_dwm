@@ -6,9 +6,9 @@
 
 # Dependencies: pamixer
 
-dwm_pulse () {
+dwm_pulse() {
     VOL=$(pamixer --get-volume-human | tr -d '%')
-    
+
     printf "%s" "$SEP1"
     if [ "$IDENTIFIER" = "unicode" ]; then
         if [ "$VOL" = "muted" ] || [ "$VOL" -eq 0 ]; then

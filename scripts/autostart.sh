@@ -6,10 +6,6 @@ xrandr --output LVDS1 --off --output DP1 --off --output HDMI1 --primary --mode 1
 picom -b
 /bin/bash "${curdir}"/tap-to-click.sh &
 /bin/bash "${curdir}"/inverse-scroll.sh &
-nm-applet &
-fcitx5 &
-feh --bg-fill ~/Pictures/1dbc43f4880511ebb6edd017c2d2eca2.jpg &
-xfce4-power-manager &
-xfce4-volumed-pulse &
 /bin/bash "${curdir}"/run-mailsync.sh &
 "${curdir}"/autostart_wait.sh &
+feh --bg-fill --randomize ~/Pictures/guidao/*

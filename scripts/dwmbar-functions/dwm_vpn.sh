@@ -6,7 +6,7 @@
 
 # Dependencies: NetworkManager-openvpn
 
-dwm_vpn () {
+dwm_vpn() {
     VPN=$(nmcli -a | grep 'VPN connection' | sed -e 's/\( VPN connection\)*$//g')
 
     if [ "$VPN" != "" ]; then
@@ -19,6 +19,5 @@ dwm_vpn () {
         printf "%s\n" "$SEP2"
     fi
 }
-
 
 dwm_vpn

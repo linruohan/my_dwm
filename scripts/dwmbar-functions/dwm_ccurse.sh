@@ -6,7 +6,7 @@
 
 # Dependencies: calcurse
 
-dwm_ccurse () {
+dwm_ccurse() {
     APTSFILE="$HOME/.calcurse/apts"
     APPOINTMENT=$(head -n 1 "$APTSFILE" | sed -r 's/\[1\] //')
 

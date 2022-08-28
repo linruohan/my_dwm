@@ -1,5 +1,7 @@
 #!/bin/bash
-
-sleep 10
 #xmodmap ~/.Xmodmap &
-#fcitx &
+fcitx5 &
+nm-applet &
+fcitx5 &
+xfce4-power-manager &
+xfce4-volumed-pulse &

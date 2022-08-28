@@ -6,7 +6,7 @@
 
 # Dependencies: alsa-utils
 
-dwm_alsa () {
+dwm_alsa() {
     VOL=$(amixer get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*/\1/")
     printf "%s" "$SEP1"
     if [ "$IDENTIFIER" = "unicode" ]; then
@@ -32,4 +32,3 @@ dwm_alsa () {
     fi
     printf "%s\n" "$SEP2"
 }
-

@@ -6,7 +6,7 @@
 
 # Dependencies: https://github.com/joestandring/countdown
 
-dwm_countdown () {
+dwm_countdown() {
     for f in /tmp/countdown.*; do
         if [ -e "$f" ]; then
             printf "%s" "$SEP1"

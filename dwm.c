@@ -1726,7 +1726,7 @@ void run(void) {
 }
 
 void runAutostart(void) {
-  system("cd ~/codehub/my_dwm/scripts; ./autostart_blocking.sh");
+  // system("cd ~/codehub/my_dwm/scripts; ./autostart_blocking.sh");
   system("cd ~/codehub/my_dwm/scripts; ./autostart.sh &");
 }
 

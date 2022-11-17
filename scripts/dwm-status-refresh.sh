@@ -5,7 +5,7 @@
 # Within that line, the first and ninth numbers after ':' are respectively the received and transmited bytes.
 function get_bytes {
     # Find active network interface
-    interface=$(ip route get 8.8.8.8 2>/dev/null | awk '{print $5}')
+    interface=$(ip route get 8.8.8.8 2> /dev/null | awk '{print $5}')
     line=$(grep $interface /proc/net/dev | cut -d ':' -f 2 | awk '{print "received_bytes="$1, "transmitted_bytes="$9}')
     eval $line
     now=$(date +%s%N)
@@ -65,7 +65,7 @@ get_time_until_charged() {
     present_rate=$(acpitool -B | grep -E 'Present rate' | awk '{print $4}' | grep -Eo "[0-9]+" | paste -sd+ | bc)
 
     # divides current charge by the rate at which it's falling, then converts it into seconds for `date`
-    seconds=$(bc <<<"scale = 10; ($sum_remaining_charge / $present_rate) * 3600")
+    seconds=$(bc <<< "scale = 10; ($sum_remaining_charge / $present_rate) * 3600")
 
     # prettifies the seconds into h:mm:ss format
     pretty_time=$(date -u -d @${seconds} +%T)

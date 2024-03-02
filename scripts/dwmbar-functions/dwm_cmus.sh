@@ -7,7 +7,7 @@
 # Dependencies: cmus
 
 dwm_cmus() {
-    if ps -C cmus >/dev/null; then
+    if ps -C cmus > /dev/null; then
         ARTIST=$(cmus-remote -Q | grep -a '^tag artist' | awk '{gsub("tag artist ", "");print}')
         TRACK=$(cmus-remote -Q | grep -a '^tag title' | awk '{gsub("tag title ", "");print}')
         POSITION=$(cmus-remote -Q | grep -a '^position' | awk '{gsub("position ", "");print}')

@@ -22,7 +22,7 @@ static const unsigned int gappov =
 static const int smartgaps =
     1; /* 1 means no outer gap when there is only one window */
 static const int showbar = 1;       /* 0 means no bar */
-static const int topbar = 0;        /* 0 means bottom bar */
+static const int topbar = 1;        /* 0 means bottom bar */
 static const Bool viewontag = True; /* Switch view on tag switch */
 static const char *fonts[] = {
     "SauceCodePro Nerd Font Mono:size=16:style=Regular",
@@ -107,7 +107,7 @@ static char dmenumon[2] =
 static const char *dmenucmd[] = {
     "dmenu_run", "-m",      dmenumon, "-fn",    dmenufont, "-nb",     col_gray1,
     "-nf",       col_gray3, "-sb",    col_cyan, "-sf",     col_gray4, NULL};
-static const char *termcmd[] = {"st", NULL};
+static const char *termcmd[] = {"alacritty", NULL};
 // static const char *termcmd[] = {"kitty", NULL};
 static const char *browsercmd[] = {"google-chrome-stable", NULL};
 static const char *rofi[] = {"rofi",  "-combi-modi", "window,drun,ssh,run",

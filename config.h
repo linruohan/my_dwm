@@ -112,27 +112,27 @@ static const char *termcmd[] = {"alacritty", NULL};
 static const char *browsercmd[] = {"google-chrome-stable", NULL};
 static const char *rofi[] = {"rofi",  "-combi-modi", "window,drun,ssh,run",
                              "-show", "combi",       NULL};
-static const char *upvol[] = {"/home/xiaohan/codehub/my_dwm/scripts/vol-up.sh",
+static const char *upvol[] = {"~/codehub/my_dwm/scripts/vol-up.sh",
                               NULL};
 static const char *downvol[] = {
-    "/home/xiaohan/codehub/my_dwm/scripts/vol-down.sh", NULL};
+    "~/codehub/my_dwm/scripts/vol-down.sh", NULL};
 static const char *mutevol[] = {
-    "/home/xiaohan/codehub/my_dwm/scripts/vol-toggle.sh", NULL};
+    "~/codehub/my_dwm/scripts/vol-toggle.sh", NULL};
 static const char *wpcmd[] = {
-    "/home/xiaohan/codehub/my_dwm/scripts/wp-change.sh", NULL};
+    "~/codehub/my_dwm/scripts/wp-change.sh", NULL};
 static const char *sktogglecmd[] = {
-    "/home/xiaohan/codehub/my_dwm/scripts/sck-tog.sh", NULL};
+    "~/codehub/my_dwm/scripts/sck-tog.sh", NULL};
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = {"st", "-t",    scratchpadname,
                                       "-g", "80x24", NULL};
 
 static const char *setcolemakcmd[] = {
-    "/home/xiaohan/codehub/my_dwm/scripts/setxmodmap-colemak.sh", NULL};
+    "~/codehub/my_dwm/scripts/setxmodmap-colemak.sh", NULL};
 static const char *setqwertycmd[] = {
-    "/home/xiaohan/codehub/my_dwm/scripts/setxmodmap-qwerty.sh", NULL};
+    "~/codehub/my_dwm/scripts/setxmodmap-qwerty.sh", NULL};
 
 static const char *suspendcmd[] = {
-    "/home/xiaohan/codehub/my_dwm/scripts/suspend.sh", NULL};
+    "~/codehub/my_dwm/scripts/suspend.sh", NULL};
 
 static const char *screenshotcmd[] = {"flameshot", "gui", NULL};
 

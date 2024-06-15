@@ -395,6 +395,20 @@ static unsigned int scratchtag = 1 << LENGTH(tags);
 struct NumTags {
     char limitexceeded[LENGTH(tags) > 31 ? -1 : 1];
 };
+int issinglewin(const Arg* arg) {
+    Client* c = NULL;
+    int cot = 0;
+    int tag = selmon->tagset[selmon->seltags];
+    for (c = selmon->clients; c; c = c->next) {
+        if (ISVISIBLE(c) && !HIDDEN(c) && c->tags == tag) {
+            cot++;
+        }
+        if (cot > 1) {
+            return 0;
+        }
+    }
+    return 1;
+}
 
 /* function implementations */
 void applyrules(Client* c) {
@@ -2273,20 +2287,6 @@ void restoreotherwins(const Arg* arg) {
     }
 }
 
-int issinglewin(const Arg* arg) {
-    Client* c = NULL;
-    int cot = 0;
-    int tag = selmon->tagset[selmon->seltags];
-    for (c = selmon->clients; c; c = c->next) {
-        if (ISVISIBLE(c) && !HIDDEN(c) && c->tags == tag) {
-            cot++;
-        }
-        if (cot > 1) {
-            return 0;
-        }
-    }
-    return 1;
-}
 
 void focuswin(const Arg* arg) {
     Client *c = NULL, *i;

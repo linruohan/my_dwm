@@ -25,6 +25,7 @@ static const int showbar = 1;       /* 0 means no bar */
 static const int topbar = 1;        /* 0 means bottom bar */
 static const Bool viewontag = True; /* Switch view on tag switch */
 static const char* fonts[] = {
+    "FantasqueSansMono Nerd Font Mono:size=16:style=Regular",
     "SauceCodePro Nerd Font Mono:size=16:style=Regular",
     "WenQuanYi Micro Hei:size=16:type=Regular:antialias=true:autohint=true",
     "JoyPixels:pixelsize=16:type=Regular:antialias=true:autohint=true",

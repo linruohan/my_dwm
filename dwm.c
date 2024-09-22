@@ -84,11 +84,11 @@
 enum { CurNormal, CurResize, CurMove, CurLast }; /* cursor */
 enum { SchemeNorm, SchemeSel, SchemeHid };       /* color schemes */
 enum {
-    NetSupported,
-    NetWMName,
-    NetWMState,
-    NetWMCheck,
-    NetSystemTray,
+  NetSupported,
+  NetWMName,
+  NetWMState,
+  NetWMCheck,
+  NetSystemTray,
     NetSystemTrayOP,
     NetSystemTrayOrientation,
     NetSystemTrayOrientationHorz,
@@ -1755,7 +1755,7 @@ void run(void) {
 
 void runAutostart(void) {
     // system("cd ~/codehub/my_dwm/scripts; ./autostart_blocking.sh");
-    system("cd ~/codehub/my_dwm/scripts; ./autostart.sh &");
+    system("cd /usr1/codehub/my_dwm/scripts; ./autostart.sh &");
 }
 
 void scan(void) {
